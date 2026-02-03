@@ -10,10 +10,46 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.com'
+
 export const metadata = {
-  title: 'Everything Starts as a Square - Get lost in the world of icon design',
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: 'AI Product Photography Course – Studio & Lifestyle Photos That Build Trust',
+    template: '%s | AI Product Photography Course',
+  },
   description:
-    'A book and video course that teaches you how to design your own icons from scratch.',
+    'A 5-day email course for e-commerce brands. Learn how to create AI product photos that don’t look like AI—studio and lifestyle shots that build trust, not doubt.',
+  keywords: ['AI product photography', 'e-commerce photography', 'product photos', 'AI photos', 'email course'],
+  authors: [{ name: 'AI Product Photography Course' }],
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: '/',
+    siteName: 'AI Product Photography Course',
+    title: 'AI Product Photography Course – Studio & Lifestyle Photos That Build Trust',
+    description:
+      'A 5-day email course for e-commerce brands. Learn how to create AI product photos that don’t look like AI.',
+    images: [
+      {
+        url: '/og.png',
+        width: 1200,
+        height: 630,
+        alt: 'AI Product Photography Course',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI Product Photography Course – Studio & Lifestyle Photos That Build Trust',
+    description:
+      'A 5-day email course for e-commerce brands. Learn how to create AI product photos that don’t look like AI.',
+    images: ['/og.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function RootLayout({ children }) {
