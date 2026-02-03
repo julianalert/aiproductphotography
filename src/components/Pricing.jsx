@@ -116,12 +116,13 @@ export function Pricing() {
               name="5-day course"
               description="You'll learn how to create AI product photos that convert."
               price="17"
-              href="#"
+              href="https://buy.stripe.com/7sY5kEaVEaO4atzet5eME0a"
               features={[
                 '5-day course',
                 'Access to all the workflows we will explore',
                 'Access to the prompt library for every style (fashion, beauty, home, etc.)',
                 'Direct support if you need help',
+                'All future updates for free',
               ]}
             />
           </div>
