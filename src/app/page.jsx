@@ -1,17 +1,16 @@
+import { AfterThisCourse } from '@/components/AfterThisCourse'
 import { Author } from '@/components/Author'
 import { Footer } from '@/components/Footer'
-import { FreeChapters } from '@/components/FreeChapters'
 import { Hero } from '@/components/Hero'
 import { Introduction } from '@/components/Introduction'
 import { NavBar } from '@/components/NavBar'
 import { Pricing } from '@/components/Pricing'
-import { Resources } from '@/components/Resources'
-import { Screencasts } from '@/components/Screencasts'
+import { SeeMore } from '@/components/SeeMore'
 import { TableOfContents } from '@/components/TableOfContents'
 import { Testimonial } from '@/components/Testimonial'
-import { Testimonials } from '@/components/Testimonials'
-import avatarImage1 from '@/images/avatars/avatar-1.png'
-import avatarImage2 from '@/images/avatars/avatar-2.png'
+import avatarImage1 from '@/images/sarah.webp'
+import avatarImage2 from '@/images/ian.webp'
+import avatarImage3 from '@/images/amir.webp'
 
 export default function Home() {
   return (
@@ -19,38 +18,47 @@ export default function Home() {
       <Hero />
       <Introduction />
       <NavBar />
+      <SeeMore />
       <TableOfContents />
+      <Testimonial
+        id="testimonial-from-gerardo-stark"
+        author={{
+          name: 'Amir J. Blake',
+          role: 'Author',
+          image: avatarImage3,
+        }}
+      >
+        <p>
+          I gave life to my digital book covers with this course. I have been able to run ads with contextual pictures. I'm so grateful for it.
+        </p>
+      </Testimonial>
+      <AfterThisCourse />
       <Testimonial
         id="testimonial-from-tommy-stroman"
         author={{
-          name: 'Tommy Stroman',
-          role: 'Front-end developer',
+          name: 'Sarah Marshall',
+          role: 'Founder at Noomi',
           image: avatarImage1,
         }}
       >
         <p>
-          “I didn’t know a thing about icon design until I read this book. Now I
-          can create any icon I need in no time. Great resource!”
+          I finally got product photos I could use on my PDP without feeling embarrassed. All with brand consistency. Amazing.
         </p>
       </Testimonial>
-      <Screencasts />
+      
+      <Pricing />
       <Testimonial
         id="testimonial-from-gerardo-stark"
         author={{
-          name: 'Gerardo Stark',
-          role: 'Creator of Pandemicons',
+          name: 'Ian MacEachern',
+          role: 'Founder at Hymacs',
           image: avatarImage2,
         }}
       >
         <p>
-          “I’ve tried to create my own icons in the past but quickly got
-          frustrated and gave up. Now I sell my own custom icon sets online.”
+        All the pictures I made got great results! We launched a paid ads campaign on TikTok and got one of our best performance. Can't recommend enough!
         </p>
       </Testimonial>
-      <Resources />
-      <FreeChapters />
-      <Pricing />
-      <Testimonials />
       <Author />
       <Footer />
     </>

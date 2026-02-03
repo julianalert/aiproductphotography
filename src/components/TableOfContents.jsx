@@ -1,34 +1,29 @@
 import { Container } from '@/components/Container'
-import {
-  Expandable,
-  ExpandableButton,
-  ExpandableItems,
-} from '@/components/Expandable'
 import { SectionHeading } from '@/components/SectionHeading'
 
 const tableOfContents = {
-  'Getting started': {
-    'Getting started': 1,
-    'Intro to Figma': 15,
+  'Day 1: Why Most AI Product Photos Kill Trust': {
+    'The Real Problem With AI Product Photos': 1,
+    'The Trust Test': 15,
     'Setting up your first artboard': 20,
   },
-  Fundamentals: {
-    'Strokes and fills': 21,
-    'End points': 22,
-    'Bezier curves': 26,
-    'Designing on a grid': 31,
-    'Vector shapes': 45,
+  'Day 2: What Makes an Image Look Real': {
+    'The Core Concept of AI Product Photography': 21,
+    'The 5 Realism Pillars': 22,
+    'Examples of Good and Bad AI Product Photos': 26,
   },
-  'Boolean operations': {
-    'Combining shapes': 50,
-    'Subtracting shapes': 57,
-    'Intersecting shapes': 66,
-    Flattening: 78,
+  'Day 3: The Only Workflow That Works for AI Product Photography': {
+    'Our Signature Workflow, Step By Step': 50,
+    'The core prompt (and the prompt library)': 57,
+    'Step-by-ste guide to create your first AI Product Photo For Your Brand': 57,    
   },
-  'Optimizing for production': {
-    'Preparing for SVG': 82,
-    'Configuring your export settings': 88,
-    'Minifying and removing metadata': 95,
+  'Create Lifestyle Images That Make Sense (And Don’t Look Staged)': {
+    'The Rules to Know To Nail Lifestyle Images': 82,
+    'Step-by-ste guide to create your first AI Lifestyle Photo For Your Brand': 88,
+  },
+  'The Cost of Getting It Wrong': {
+    'Using AI for Product Photos vs Not Using AI': 82,
+    'DIY vs DFY': 88,
   },
 }
 
@@ -41,56 +36,39 @@ export function TableOfContents() {
     >
       <Container>
         <SectionHeading number="1" id="table-of-contents-title">
-          Table of contents
+          What's inside?
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Get a look at all of the content covered in the book. Everything you
-          need to know is inside.
+          It's not about making beautiful photos. It's about making visual content that helps you make more money.
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          “Everything Starts as a Square” is comprised of 240 tightly edited,
-          highly visual pages designed to teach you everything you need to know
-          about icon design with no unnecessary filler.
+        By Day 5, you'll know why most AI product photos fail and how to create images that look like a real shoot and convert better.
         </p>
-        <Expandable>
-          <ol role="list" className="mt-16 space-y-10 sm:space-y-16">
-            <ExpandableItems>
-              {Object.entries(tableOfContents).map(([title, pages]) => (
-                <li key={title}>
-                  <h3 className="font-display text-3xl font-bold tracking-tight text-slate-900">
-                    {title}
-                  </h3>
-                  <ol
-                    role="list"
-                    className="mt-8 divide-y divide-slate-300/30 rounded-2xl bg-slate-50 px-6 py-3 text-base tracking-tight sm:px-8 sm:py-7"
+        <ol role="list" className="mt-16 space-y-10 sm:space-y-16">
+          {Object.entries(tableOfContents).map(([title, pages]) => (
+            <li key={title}>
+              <h3 className="font-display text-3xl font-bold tracking-tight text-slate-900">
+                {title}
+              </h3>
+              <ol
+                role="list"
+                className="mt-8 divide-y divide-slate-300/30 rounded-2xl bg-slate-50 px-6 py-3 text-base tracking-tight sm:px-8 sm:py-7"
+              >
+                {Object.keys(pages).map((topicTitle) => (
+                  <li
+                    key={topicTitle}
+                    className="py-3"
+                    aria-label={topicTitle}
                   >
-                    {Object.entries(pages).map(([title, pageNumber]) => (
-                      <li
-                        key={title}
-                        className="flex justify-between py-3"
-                        aria-label={`${title} on page ${pageNumber}`}
-                      >
-                        <span
-                          className="font-medium text-slate-900"
-                          aria-hidden="true"
-                        >
-                          {title}
-                        </span>
-                        <span
-                          className="font-mono text-slate-400"
-                          aria-hidden="true"
-                        >
-                          {pageNumber}
-                        </span>
-                      </li>
-                    ))}
-                  </ol>
-                </li>
-              ))}
-            </ExpandableItems>
-          </ol>
-          <ExpandableButton>See more</ExpandableButton>
-        </Expandable>
+                    <span className="font-medium text-slate-900">
+                      {topicTitle}
+                    </span>
+                  </li>
+                ))}
+              </ol>
+            </li>
+          ))}
+        </ol>
       </Container>
     </section>
   )

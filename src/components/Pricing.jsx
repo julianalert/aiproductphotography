@@ -83,7 +83,7 @@ function Plan({ name, description, price, features, href, featured = false }) {
           className="mt-8"
           aria-label={`Get started with the ${name} plan for $${price}`}
         >
-          Get started
+          Start the course
         </Button>
       </div>
     </div>
@@ -105,37 +105,26 @@ export function Pricing() {
           Pick your package
         </p>
         <p className="mt-4 max-w-xl text-lg tracking-tight text-slate-600">
-          “Everything Starts as a Square” is available in two different packages
-          so you can pick the one that’s right for you.
+          Get everything you need to create AI product photos that convert.
         </p>
       </Container>
       <div className="mx-auto mt-16 max-w-5xl lg:px-6">
-        <div className="grid bg-slate-50 sm:px-6 sm:pb-16 md:grid-cols-2 md:rounded-6xl md:px-8 md:pt-16 lg:p-20">
-          <Plan
-            name="Essential"
-            description="The perfect starting point if you’re on a budget."
-            price="15"
-            href="#"
-            features={[
-              'The 240-page ebook',
-              'Figma icon templates',
-              'Community access',
-            ]}
-          />
-          <Plan
-            featured
-            name="Complete"
-            description="Everything icon resource you could ever ask for."
-            price="229"
-            href="#"
-            features={[
-              'The 240-page ebook',
-              'Figma icon templates',
-              'Over an hour of screencasts',
-              'Weekly icon teardowns',
-              'Community access',
-            ]}
-          />
+        <div className="bg-slate-50 sm:px-6 sm:pb-16 md:rounded-6xl md:px-8 md:pt-16 lg:p-20">
+          <div className="mx-auto max-w-md">
+            <Plan
+              featured
+              name="5-day course"
+              description="You'll learn how to create AI product photos that convert."
+              price="17"
+              href="#"
+              features={[
+                '5-day course',
+                'Access to all the workflows we will explore',
+                'Access to the prompt library for every style (fashion, beauty, home, etc.)',
+                'Direct support if you need help',
+              ]}
+            />
+          </div>
         </div>
       </div>
     </section>
