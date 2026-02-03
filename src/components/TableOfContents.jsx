@@ -2,15 +2,15 @@ import { Container } from '@/components/Container'
 import { SectionHeading } from '@/components/SectionHeading'
 
 const tableOfContents = {
-  'Day 1: Why Most AI Product Photos Kill Trust': {
-    'The Real Problem With AI Product Photos': 1,
+  'Day 1: The Problem With Low Effort AI Product Photos': {
+    'Why Most AI Product Photos Kill Trust': 1,
     'The Trust Test': 15,
-    'Setting up your first artboard': 20,
   },
-  'Day 2: What Makes an Image Look Real': {
-    'The Core Concept of AI Product Photography': 21,
+  'Day 2: Crafting A Prompt That Makes An Image Look & Feel Real': {
+    'What Makes an Image Look & Feel Real': 21,
     'The 5 Realism Pillars': 22,
-    'Examples of Good and Bad AI Product Photos': 26,
+    'Examples of Good and Bad AI Product Photos For Ecommerce Brands': 26,
+    'Examples of Good and Bad AI Product Photos For Ecommerce Brands': 26,
   },
   'Day 3: The Only Workflow That Works for AI Product Photography': {
     'Our Signature Workflow, Step By Step': 50,

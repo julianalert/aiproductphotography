@@ -13,7 +13,7 @@ function Testimonial() {
       </div>
       <blockquote className="mt-2">
         <p className="font-display text-xl font-medium text-slate-900">
-        We reshaped our whole brand with the help of this course. We're extremely happy with the results.”
+        We reshaped all our PDPs with the help of this course. We're extremely happy with the results.”
         </p>
       </blockquote>
       <figcaption className="mt-2 text-sm text-slate-500">

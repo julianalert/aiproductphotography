@@ -17,14 +17,13 @@ function BrainIcon(props) {
 }
 
 const benefits = [
-  "Create product images that look like a real photoshoot",
-  "Make AI images people don’t question",
-  "Use AI without killing trust on your product pages",
-  "Build lifestyle scenes that actually make sense",
-  "Control light, mood, and realism, not fight the tool",
-  "Spot fake-looking AI images instantly (and avoid them)",
-  "Know when AI is good enough and when it’s not",
-  "Produce visuals you can confidently use on PDPs and socials",
+  "Say no to photographer fees and delays (goodbye the $5k invoice).",
+  "Create product photos people don’t question IN SECONDS.",
+  "Create tons of variations depending on your needs: Ads, PDPs, socials, launches.",
+  "Make infinite versions without losing consistency: different angles, backgrounds, seasons, campaigns, etc. BUT the same brand style.",
+  "Control the output with no compromises: no back and forth, no waiting for revisions.",
+  "Test as many variations as you want without losing time or money.",
+  "Focus on what matters most for your business: no more wasted time managing timelines, coordination people for photoshoots, etc.",
 ]
 
 export function AfterThisCourse() {
