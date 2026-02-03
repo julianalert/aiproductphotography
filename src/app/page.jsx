@@ -5,7 +5,6 @@ import { Hero } from '@/components/Hero'
 import { Introduction } from '@/components/Introduction'
 import { NavBar } from '@/components/NavBar'
 import { Pricing } from '@/components/Pricing'
-import { SeeMore } from '@/components/SeeMore'
 import { TableOfContents } from '@/components/TableOfContents'
 import { Testimonial } from '@/components/Testimonial'
 import avatarImage1 from '@/images/sarah.webp'
@@ -18,7 +17,6 @@ export default function Home() {
       <Hero />
       <Introduction />
       <NavBar />
-      <SeeMore />
       <TableOfContents />
       <Testimonial
         id="testimonial-from-gerardo-stark"

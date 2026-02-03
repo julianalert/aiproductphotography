@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
@@ -35,7 +36,14 @@ export default function RootLayout({ children }) {
           href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700&display=swap"
         />
       </head>
-      <body className="flex min-h-full flex-col">{children}</body>
+      <body className="flex min-h-full flex-col">
+        <Script
+          src="https://beamanalytics.b-cdn.net/beam.min.js"
+          data-token="6b5b6e73-3004-4fe4-b675-226ee5437193"
+          strategy="afterInteractive"
+        />
+        {children}
+      </body>
     </html>
   )
 }

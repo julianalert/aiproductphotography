@@ -107,7 +107,7 @@ No $5k invoice.
         </p>
         <p className="mt-10">
           <Link
-            href="#free-chapters"
+            href="https://buy.stripe.com/7sY5kEaVEaO4atzet5eME0a"
             className="text-base font-medium text-blue-600 hover:text-blue-800"
           >
             Get the course now{' '}

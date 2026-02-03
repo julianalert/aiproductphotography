@@ -48,14 +48,14 @@ export function Hero() {
         </div>
         <div className="bg-white pt-16 lg:col-span-7 lg:bg-transparent lg:pt-0 lg:pl-16 xl:pl-20">
           <div className="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
-            <h1 className="font-display text-5xl font-extrabold text-slate-900 sm:text-6xl">
-            AI Product Photos That Actually Sells.
+            <h1 className="font-display text-4xl font-extrabold text-slate-900 sm:text-5xl">
+            Learn How To Create AI Product Photos That Don't Look Like AI
             </h1>
             <p className="mt-4 text-3xl text-slate-600">
               A 5-day email course for e-commerce brands who want studio and lifestyle photos that build trust, not doubt.
             </p>
             <div className="mt-8 flex gap-4">
-              <Button href="#free-chapters" color="blue">
+              <Button href="https://buy.stripe.com/7sY5kEaVEaO4atzet5eME0a" color="blue">
                 Get the course - $17
               </Button>
               {/* <Button href="#pricing" variant="outline" color="blue">
