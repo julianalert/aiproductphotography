@@ -38,15 +38,14 @@ export function Author() {
               Author
             </SectionHeading>
             <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-              I'm Julien, aka{' '}
-              <span className="block text-blue-600">Not Another Marketer</span>
+              I'm Julian, 
             </p>
             <p className="mt-4 text-lg tracking-tight text-slate-700">
               I have been using AI to help clients get the best product photos for 2 years now. Today, with the perfect workflow, I can create photos that look like a real shoot and convert better. And I want to share it with you. Hope you'll enjoy it. Any question, hit me up on X.
             </p>
             <p className="mt-8">
               <Link
-                href="https://x.com/notanothermarketer"
+                href="https://x.com/julianyuzuu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-base font-medium tracking-tight text-slate-900"
