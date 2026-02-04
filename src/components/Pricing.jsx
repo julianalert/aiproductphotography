@@ -1,5 +1,6 @@
 import clsx from 'clsx'
 
+import { gtag_report_conversion } from '@/lib/gtag'
 import { Button } from '@/components/Button'
 import { CheckIcon } from '@/components/CheckIcon'
 import { Container } from '@/components/Container'
@@ -82,6 +83,14 @@ function Plan({ name, description, price, features, href, featured = false }) {
           color={featured ? 'white' : 'slate'}
           className="mt-8"
           aria-label={`Get started with the ${name} plan for $${price}`}
+          onClick={
+            href?.includes('stripe.com')
+              ? (e) => {
+                  e.preventDefault()
+                  gtag_report_conversion(href)
+                }
+              : undefined
+          }
         >
           Start the course
         </Button>

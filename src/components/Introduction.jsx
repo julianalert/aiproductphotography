@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { gtag_report_conversion } from '@/lib/gtag'
 import { CheckIcon } from '@/components/CheckIcon'
 import { Container } from '@/components/Container'
 import aiProductPhoto from '@/images/ai-product-photography.png'
@@ -109,6 +110,10 @@ No $5k invoice.
           <Link
             href="https://buy.stripe.com/7sY5kEaVEaO4atzet5eME0a"
             className="text-base font-medium text-blue-600 hover:text-blue-800"
+            onClick={(e) => {
+              e.preventDefault()
+              gtag_report_conversion('https://buy.stripe.com/7sY5kEaVEaO4atzet5eME0a')
+            }}
           >
             Get the course now{' '}
             <span aria-hidden="true">&rarr;</span>

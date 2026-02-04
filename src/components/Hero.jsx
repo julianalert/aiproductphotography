@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+import { gtag_report_conversion } from '@/lib/gtag'
 import { Button } from '@/components/Button'
 import { GridPattern } from '@/components/GridPattern'
 import { StarRating } from '@/components/StarRating'
@@ -65,7 +66,14 @@ export function Hero() {
               A 5-day email course for e-commerce brands who want studio and lifestyle photos that build trust, not doubt.
             </p>
             <div className="mt-8 flex gap-4">
-              <Button href="https://buy.stripe.com/7sY5kEaVEaO4atzet5eME0a" color="blue">
+              <Button
+                href="https://buy.stripe.com/7sY5kEaVEaO4atzet5eME0a"
+                color="blue"
+                onClick={(e) => {
+                  e.preventDefault()
+                  gtag_report_conversion('https://buy.stripe.com/7sY5kEaVEaO4atzet5eME0a')
+                }}
+              >
                 Get the course - $17
               </Button>
               {/* <Button href="#pricing" variant="outline" color="blue">
