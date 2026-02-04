@@ -62,6 +62,18 @@ export default function RootLayout({ children }) {
       )}
     >
       <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17912302186"
+          strategy="beforeInteractive"
+        />
+        <Script id="google-ads" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17912302186');
+          `}
+        </Script>
         <link
           rel="preconnect"
           href="https://cdn.fontshare.com"
