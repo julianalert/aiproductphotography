@@ -18,7 +18,7 @@ export function Introduction() {
           I get you.
         </p>
         <p className="mt-4 font-display text-4xl font-bold tracking-tight text-slate-900">
-        You wanted to create great product photos with AI,
+        You tried this last trendy AI tool that promised great product photos,
         and you ended up with images like this.
         </p>
         <div className="mt-4 w-full">

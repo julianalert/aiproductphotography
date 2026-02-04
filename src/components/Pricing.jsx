@@ -102,10 +102,10 @@ export function Pricing() {
           Pricing
         </SectionHeading>
         <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-          Pick your package
+          Pricing
         </p>
         <p className="mt-4 max-w-xl text-lg tracking-tight text-slate-600">
-          Get everything you need to create AI product photos that convert.
+          If you want to create AI product photos that convert, this is for you.
         </p>
       </Container>
       <div className="mx-auto mt-16 max-w-5xl lg:px-6">
