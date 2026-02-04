@@ -4,6 +4,7 @@ import { Button } from '@/components/Button'
 import { GridPattern } from '@/components/GridPattern'
 import { StarRating } from '@/components/StarRating'
 import coverImage from '@/images/ai-product-photography.png'
+import clementImage from '@/images/clement.webp'
 
 function Testimonial() {
   return (
@@ -16,11 +17,20 @@ function Testimonial() {
         We reshaped all our PDPs with the help of this course. We're extremely happy with the results.”
         </p>
       </blockquote>
-      <figcaption className="mt-2 text-sm text-slate-500">
-        <strong className="font-semibold text-blue-600 before:content-['—_']">
-          Clément Bernard
-        </strong>
-        , Owner at PWRRR
+      <figcaption className="mt-2 flex items-center gap-3 text-sm">
+        <div className="overflow-hidden rounded-full bg-slate-200 shrink-0">
+          <Image
+            src={clementImage}
+            alt=""
+            width={40}
+            height={40}
+            className="h-10 w-10 object-cover"
+          />
+        </div>
+        <span>
+          <strong className="font-semibold text-blue-600">Clément Bernard</strong>
+          <span className="text-slate-500">, Owner at PWRRR</span>
+        </span>
       </figcaption>
     </figure>
   )

@@ -42,7 +42,7 @@ export function TableOfContents() {
           It's not about making beautiful photos. It's about making visual content that helps you make more money.
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-        By Day 5, you'll know why most AI product photos fail and how to create images that look like a real shoot and convert better.
+          In 5 days, you'll go from "<em><strong>this is trash</strong></em> <span role="img" aria-label="Angry Face">🤬</span>" to "<em><strong>this is perfect</strong></em> <span role="img" aria-label="Happy Face">🤩</span>".
         </p>
         <ol role="list" className="mt-16 space-y-10 sm:space-y-16">
           {Object.entries(tableOfContents).map(([title, pages]) => (
