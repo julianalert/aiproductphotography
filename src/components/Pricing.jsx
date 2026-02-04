@@ -1,3 +1,5 @@
+'use client'
+
 import clsx from 'clsx'
 
 import { gtag_report_conversion } from '@/lib/gtag'

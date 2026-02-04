@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 
 import { gtag_report_conversion } from '@/lib/gtag'
