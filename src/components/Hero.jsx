@@ -2,11 +2,10 @@
 
 import Image from 'next/image'
 
-import { gtag_report_conversion } from '@/lib/gtag'
-import { Button } from '@/components/Button'
+import { EmailSignupForm } from '@/components/EmailSignupForm'
 import { GridPattern } from '@/components/GridPattern'
 import { StarRating } from '@/components/StarRating'
-import coverImage from '@/images/ai-product-photography.png'
+import coverImage from '@/images/ai-product-photography-course.png'
 import clementImage from '@/images/clement.webp'
 
 function Testimonial() {
@@ -65,24 +64,9 @@ export function Hero() {
             Learn How To Create AI Product Photos That Don't Look Like AI
             </h1>
             <p className="mt-4 text-3xl text-slate-600">
-              A 5-day email course for e-commerce brands who want studio and lifestyle photos that build trust, not doubt.
+              A complete course hub for e-commerce brands who want studio and lifestyle photos that build trust, not doubt.
             </p>
-            <div className="mt-8 flex gap-4">
-              <Button
-                href="https://buy.stripe.com/7sY5kEaVEaO4atzet5eME0a"
-                color="blue"
-                onClick={(e) => {
-                  e.preventDefault()
-                  gtag_report_conversion('https://buy.stripe.com/7sY5kEaVEaO4atzet5eME0a')
-                }}
-              >
-                Get the course - $17
-              </Button>
-              {/* <Button href="#pricing" variant="outline" color="blue">
-                Get the course - $17
-              </Button>
-              */}
-            </div>
+            <EmailSignupForm inputId="hero-email" className="mt-8" />
           </div>
         </div>
       </div>

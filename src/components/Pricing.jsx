@@ -2,14 +2,15 @@
 
 import clsx from 'clsx'
 
-import { gtag_report_conversion } from '@/lib/gtag'
-import { Button } from '@/components/Button'
 import { CheckIcon } from '@/components/CheckIcon'
 import { Container } from '@/components/Container'
+import { EmailSignupForm } from '@/components/EmailSignupForm'
 import { GridPattern } from '@/components/GridPattern'
 import { SectionHeading } from '@/components/SectionHeading'
 
-function Plan({ name, description, price, features, href, featured = false }) {
+function Plan({ name, description, price, features, featured = false, useForm = false }) {
+  const isFree = price === 0 || price === '0' || price === 'free'
+
   return (
     <div
       className={clsx(
@@ -40,22 +41,35 @@ function Plan({ name, description, price, features, href, featured = false }) {
           {description}
         </p>
         <p className="order-first flex font-display font-bold">
-          <span
-            className={clsx(
-              'text-[1.75rem]/9',
-              featured ? 'text-blue-200' : 'text-slate-500',
-            )}
-          >
-            $
-          </span>
-          <span
-            className={clsx(
-              'mt-1 ml-1 text-7xl tracking-tight',
-              featured ? 'text-white' : 'text-slate-900',
-            )}
-          >
-            {price}
-          </span>
+          {isFree ? (
+            <span
+              className={clsx(
+                'text-4xl tracking-tight sm:text-5xl',
+                featured ? 'text-white' : 'text-slate-900',
+              )}
+            >
+              Free
+            </span>
+          ) : (
+            <>
+              <span
+                className={clsx(
+                  'text-[1.75rem]/9',
+                  featured ? 'text-blue-200' : 'text-slate-500',
+                )}
+              >
+                $
+              </span>
+              <span
+                className={clsx(
+                  'mt-1 ml-1 text-7xl tracking-tight',
+                  featured ? 'text-white' : 'text-slate-900',
+                )}
+              >
+                {price}
+              </span>
+            </>
+          )}
         </p>
         <div className="order-last mt-8">
           <ul
@@ -80,22 +94,14 @@ function Plan({ name, description, price, features, href, featured = false }) {
             ))}
           </ul>
         </div>
-        <Button
-          href={href}
-          color={featured ? 'white' : 'slate'}
-          className="mt-8"
-          aria-label={`Get started with the ${name} plan for $${price}`}
-          onClick={
-            href?.includes('stripe.com')
-              ? (e) => {
-                  e.preventDefault()
-                  gtag_report_conversion(href)
-                }
-              : undefined
-          }
-        >
-          Start the course
-        </Button>
+        {useForm ? (
+          <EmailSignupForm
+            inputId="pricing-email"
+            buttonText="Get access for free"
+            variant="dark"
+            className="mt-8"
+          />
+        ) : null}
       </div>
     </div>
   )
@@ -113,7 +119,7 @@ export function Pricing() {
           Pricing
         </SectionHeading>
         <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-          Pricing
+          Yes, it's free.
         </p>
         <p className="mt-4 max-w-xl text-lg tracking-tight text-slate-600">
           If you want to create AI product photos that convert, this is for you.
@@ -124,16 +130,16 @@ export function Pricing() {
           <div className="mx-auto max-w-md">
             <Plan
               featured
-              name="5-day course"
+              useForm
+              name="Complete access to the hub"
               description="You'll learn how to create AI product photos that convert."
-              price="17"
-              href="https://buy.stripe.com/7sY5kEaVEaO4atzet5eME0a"
+              price="free"
               features={[
-                '5-day course',
+                'Full access to all the course content',
                 'Access to all the workflows we will explore',
                 'Access to the prompt library for every style (fashion, beauty, home, etc.)',
                 'Direct support if you need help',
-                'All future updates for free',
+                'All future updates for life',
               ]}
             />
           </div>

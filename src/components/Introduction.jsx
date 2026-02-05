@@ -1,11 +1,10 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
 
-import { gtag_report_conversion } from '@/lib/gtag'
 import { CheckIcon } from '@/components/CheckIcon'
 import { Container } from '@/components/Container'
+import { EmailSignupForm } from '@/components/EmailSignupForm'
 import aiProductPhoto from '@/images/ai-product-photography.png'
 import badAiProductPhoto from '@/images/bad-ai-product-photography.png'
 import goodAiProductPhoto from '@/images/good-ai-product-photography.png'
@@ -108,19 +107,7 @@ No $5k invoice.
         <p className="mt-4">
         Just you, and your computer.
         </p>
-        <p className="mt-10">
-          <Link
-            href="https://buy.stripe.com/7sY5kEaVEaO4atzet5eME0a"
-            className="text-base font-medium text-blue-600 hover:text-blue-800"
-            onClick={(e) => {
-              e.preventDefault()
-              gtag_report_conversion('https://buy.stripe.com/7sY5kEaVEaO4atzet5eME0a')
-            }}
-          >
-            Get the course now{' '}
-            <span aria-hidden="true">&rarr;</span>
-          </Link>
-        </p>
+        <EmailSignupForm inputId="intro-email" className="mt-10" />
       </Container>
     </section>
   )
