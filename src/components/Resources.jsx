@@ -10,7 +10,7 @@ const resources = [
   {
     title: 'How to create studio photos',
     description:
-      'Perfectly structured templates for quickly designing new icons at dozens of common sizes.',
+      'Includes tools used, workflows, prompts, examples and step-by-step guide.',
     image: function FigmaImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(#2C313D_35%,#000)]">
@@ -22,7 +22,7 @@ const resources = [
   {
     title: 'How to create product photos',
     description:
-      'Weekly videos where we dissect and recreate beautiful icons we find on the web.',
+      'Includes tools used, workflows, prompts, examples and step-by-step guide.',
     image: function VideoPlayerImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center">
@@ -39,7 +39,7 @@ const resources = [
   {
     title: 'How to create lifestyle photos',
     description:
-      "A private Discord server where you can get help and give feedback on each others' work.",
+      "Includes tools used, workflows, prompts, examples and step-by-step guide.",
     image: function DiscordImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
