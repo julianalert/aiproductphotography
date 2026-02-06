@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { EmailSignupForm } from '@/components/EmailSignupForm'
 import { GridPattern } from '@/components/GridPattern'
 import { StarRating } from '@/components/StarRating'
-import coverImage from '@/images/ai-product-photography-course.png'
+import coverImage from '@/images/ai-product-photography2.png'
 import clementImage from '@/images/clement.webp'
 
 function Testimonial() {

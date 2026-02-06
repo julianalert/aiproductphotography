@@ -2,14 +2,13 @@ import Image from 'next/image'
 
 import { Container } from '@/components/Container'
 import { SectionHeading } from '@/components/SectionHeading'
-import abstractBackgroundImage from '@/images/resources/abstract-background.png'
-import discordImage from '@/images/resources/discord.svg'
-import figmaImage from '@/images/resources/figma.svg'
-import videoPlayerImage from '@/images/resources/video-player.svg'
+import abstractBackgroundImage from '@/images/resources/ai-product-photo.png'
+import discordImage from '@/images/resources/ai-lifestyle-photo.png'
+import figmaImage from '@/images/resources/ai-studio-photo.png'
 
 const resources = [
   {
-    title: 'Figma icon templates',
+    title: 'How to create studio photos',
     description:
       'Perfectly structured templates for quickly designing new icons at dozens of common sizes.',
     image: function FigmaImage() {
@@ -21,7 +20,7 @@ const resources = [
     },
   },
   {
-    title: 'Weekly icon teardowns',
+    title: 'How to create product photos',
     description:
       'Weekly videos where we dissect and recreate beautiful icons we find on the web.',
     image: function VideoPlayerImage() {
@@ -33,18 +32,12 @@ const resources = [
             alt=""
             sizes="(min-width: 1280px) 21rem, (min-width: 1024px) 33vw, (min-width: 768px) 19rem, (min-width: 640px) 50vw, 100vw"
           />
-          <Image
-            className="relative"
-            src={videoPlayerImage}
-            alt=""
-            unoptimized
-          />
         </div>
       )
     },
   },
   {
-    title: 'Community of icon designers',
+    title: 'How to create lifestyle photos',
     description:
       "A private Discord server where you can get help and give feedback on each others' work.",
     image: function DiscordImage() {
@@ -65,17 +58,14 @@ export function Resources() {
       className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
       <Container>
-        <SectionHeading number="3" id="resources-title">
-          Resources
+        <SectionHeading number="1" id="resources-title">
+          What's inside
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Tools and resources you can use to get started even faster and
-          progress even further.
+          A complete suite of courses to cover all your needs.
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          Design assets, icon teardowns, and a community of fellow icon
-          designers where you can ask questions, get feedback, and accelerate
-          your learning.
+          Stop paying for overpriced AI Product Photography Tools. Learn how to create your own AI Product Photography for free.
         </p>
       </Container>
       <Container size="lg" className="mt-16">
@@ -101,6 +91,40 @@ export function Resources() {
               </div>
             </li>
           ))}
+        </ol>
+      </Container>
+      <Container className="mt-16">
+        <h3 className="font-display text-3xl font-bold tracking-tight text-slate-900">
+          Coming next
+        </h3>
+        <ol
+          role="list"
+          className="mt-8 divide-y divide-slate-300/30 rounded-2xl bg-slate-50 px-6 py-3 text-base tracking-tight sm:px-8 sm:py-7"
+        >
+          <li className="py-3 flex items-center justify-between gap-4" aria-label="How to Create Consistent Models">
+            <span className="font-medium text-slate-900">
+              How to Create Consistent Models
+            </span>
+            <span className="shrink-0 rounded-full bg-slate-200 px-3 py-1 text-xs font-medium text-slate-600">
+              Coming soon
+            </span>
+          </li>
+          <li className="py-3 flex items-center justify-between gap-4" aria-label="How to Create Original Decor">
+            <span className="font-medium text-slate-900">
+              How to Create Original Decor
+            </span>
+            <span className="shrink-0 rounded-full bg-slate-200 px-3 py-1 text-xs font-medium text-slate-600">
+              Coming soon
+            </span>
+          </li>
+          <li className="py-3 flex items-center justify-between gap-4" aria-label="How to Create a Complete Brand Photoshoot">
+            <span className="font-medium text-slate-900">
+              How to Create a Complete Brand Photoshoot
+            </span>
+            <span className="shrink-0 rounded-full bg-slate-200 px-3 py-1 text-xs font-medium text-slate-600">
+              Coming soon
+            </span>
+          </li>
         </ol>
       </Container>
     </section>

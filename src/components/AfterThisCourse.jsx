@@ -18,7 +18,7 @@ function BrainIcon(props) {
 
 const benefits = [
   "Say no to photographer fees and delays (goodbye the $5k invoice).",
-  "Create product photos people don’t question IN SECONDS.",
+  "Create product photos people don’t question.",
   "Create tons of variations depending on your needs: Ads, PDPs, socials, launches.",
   "Make infinite versions without losing consistency: different angles, backgrounds, seasons, campaigns, etc. BUT the same brand style.",
   "Control the output with no compromises: no back and forth, no waiting for revisions.",
