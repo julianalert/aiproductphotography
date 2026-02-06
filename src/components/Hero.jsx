@@ -61,7 +61,7 @@ export function Hero() {
         <div className="bg-white pt-16 lg:col-span-7 lg:bg-transparent lg:pt-0 lg:pl-16 xl:pl-20">
           <div className="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
             <h1 className="font-display text-4xl font-extrabold text-slate-900 sm:text-5xl">
-            Learn How To Create AI Product Photos That Don't Look Like AI
+            Learn How To Create AI Product Photos That Actually Sell
             </h1>
             <p className="mt-4 text-3xl text-slate-600">
               A complete course hub for e-commerce brands who want studio and lifestyle photos that build trust, not doubt.

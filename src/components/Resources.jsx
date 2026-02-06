@@ -109,9 +109,9 @@ export function Resources() {
               Coming soon
             </span>
           </li>
-          <li className="py-3 flex items-center justify-between gap-4" aria-label="How to Create Original Decor">
+          <li className="py-3 flex items-center justify-between gap-4" aria-label="How to Create Consistent Models">
             <span className="font-medium text-slate-900">
-              How to Create Original Decor
+              How to Create Ads That Convert
             </span>
             <span className="shrink-0 rounded-full bg-slate-200 px-3 py-1 text-xs font-medium text-slate-600">
               Coming soon

@@ -97,7 +97,7 @@ function Plan({ name, description, price, features, featured = false, useForm = 
         {useForm ? (
           <EmailSignupForm
             inputId="pricing-email"
-            buttonText="Get access for free"
+            buttonText="Access for free"
             variant="dark"
             className="mt-8"
           />

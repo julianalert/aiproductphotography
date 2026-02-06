@@ -8,7 +8,7 @@ import { Button } from '@/components/Button'
 
 export function EmailSignupForm({
   inputId = 'email-signup',
-  buttonText = 'Access the hub',
+  buttonText = 'Access for free',
   className = '',
   variant = 'light',
 }) {
