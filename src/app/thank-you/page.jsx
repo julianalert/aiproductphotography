@@ -16,14 +16,14 @@ export default function ThankYouPage() {
           Thank you
         </h1>
         <p className="mt-4 text-xl text-slate-600">
-          You&apos;re on the list. We&apos;ll be in touch soon with everything you need to get started.
+          You now can join the hub and access the course. 
         </p>
         <p className="mt-8">
           <Link
-            href="/"
+            href="https://eight-numeric-3e2.notion.site/AI-Product-Photography-OS-2fed99bf52d78023a91ce962988c9a74"
             className="font-semibold text-blue-600 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded"
           >
-            ← Back to home
+            Go to the hub <span aria-hidden="true">&rarr;</span>
           </Link>
         </p>
       </Container>
